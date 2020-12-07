@@ -30,14 +30,14 @@
 .sidebar__header{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20.5px;
     border-right: 1px solid rgb(255, 255, 255);
 }
 .sidebar__headerRight{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 17vw;
+    min-width: 20vw;
 }
 .searchInput{
     background: transparent;
