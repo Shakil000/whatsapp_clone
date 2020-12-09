@@ -2,6 +2,7 @@ import firebase from "firebase";
 const firebaseConfig = {
     apiKey: "AIzaSyA1pmX2W_MyL3wyEWVTp_zrrRS0EknJNuE",
     authDomain: "whatsapp-d121c.firebaseapp.com",
+    databaseURL: "https://whatsapp-d121c-default-rtdb.firebaseio.com",
 
     projectId: "whatsapp-d121c",
     storageBucket: "whatsapp-d121c.appspot.com",
@@ -17,4 +18,4 @@ const firebaseConfig = {
   const provider = new firebase.auth.GoogleAuthProvider();
 
   export { auth, provider };
-  export default db;
+  export default db; 
