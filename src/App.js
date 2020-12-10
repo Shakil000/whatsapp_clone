@@ -7,12 +7,12 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import {useStateValue} from "./StateProvider";
 
 function App() {
-    const [{user},dispatch] = useStateValue();
+    const [{user}, dispatch ] = useStateValue();
 
 
   return (
     <div className="app">
-      { !user ? (
+      {!user ? (
         <Login />
       ):(
         <div className="app__body">

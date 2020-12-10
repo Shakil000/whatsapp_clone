@@ -2,7 +2,7 @@ import React from 'react';
 import {Button} from "@material-ui/core";
 import "./Login.css";
 import {auth, provider} from "./firebase";
-import {actionType} from "./reducer";
+import {actionTypes} from "./reducer";
 import {useStateValue} from "./StateProvider";
 
 function Login() {
@@ -14,9 +14,9 @@ const [{}, dispatch] = useStateValue();
         .signInWithPopup(provider)
         .then((result) => {
             dispatch({
-                typr:actionType.SET_USER,
+                type: actionTypes.SET_USER,
                 user: result.user,
-            })
+            });
         })
         .catch((error) => alert(error.message));
 
